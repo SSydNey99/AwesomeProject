@@ -1,0 +1,24 @@
+import React from 'react';
+import { ScrollView, Text, View } from 'react-native';
+import Signup from '../../components/week3/Signup';
+import Card from '../../components/week3/Card';
+import Hotel from '../../components/week3/Hotel';
+import { FontAwesome } from '@expo/vector-icons';
+import Menu from '../../components/week3/Menu';
+
+
+
+export default function Travel() {
+    return (
+        <ScrollView>
+            <View style={{ flex: 1, paddingTop : 50  }}>
+                <Text>Text of Week 3 </Text>
+                <Menu/>
+                <Card />
+                <Hotel />
+                <Signup/>
+                <FontAwesome name="heart" size={32} color="orange" />
+            </View>
+        </ScrollView>
+    );
+}
